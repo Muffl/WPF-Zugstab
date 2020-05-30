@@ -1,0 +1,28 @@
+﻿<Window x:Name="form_SpannungImZugstab" x:Class="WPF_Zugstab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Zugstab"
+        mc:Ignorable="d"
+        Title="Spannung am Zugstab" Height="450" Width="800" SizeToContent="Manual" ResizeMode="CanMinimize" Icon="/Zugstab (3).ico" Foreground="#FF9CEC84" Background="#FF93CF82">
+    <Grid>
+
+        <Grid.Background>
+            <ImageBrush/>
+        </Grid.Background>
+        <Grid x:Name="panel_Bild" HorizontalAlignment="Left" Height="71" Margin="246,74,0,0" VerticalAlignment="Top" Width="250">
+            <Grid.Background>
+                <ImageBrush ImageSource="/Zugstab2.png"/>
+            </Grid.Background>
+        </Grid>
+        <TextBox x:Name="txtBox_F" HorizontalAlignment="Left" Height="27" Margin="73,217,0,0" Text="1000" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" BorderBrush="#FFABADB3" FontSize="22" RenderTransformOrigin="0.5,0.5" Background="#FF7BB1FF" FontFamily="Arial"/>
+        <TextBox x:Name="txtBox_d" HorizontalAlignment="Left" Height="27" Margin="303,217,0,0" Text="10" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" FontSize="20" Background="#FF7BB1FF" FontFamily="Arial"/>
+        <TextBox x:Name="txtBox_Sigma" HorizontalAlignment="Left" Height="27" Margin="552,217,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="137" FontSize="20" UndoLimit="105" SelectionTextBrush="White" Background="#FFE8DDDD" FontFamily="Arial" IsEnabled="False" Grid.ColumnSpan="2"/>
+        <Label x:Name="label_N" Content="N" HorizontalAlignment="Left" Height="27" Margin="215,217,0,0" VerticalAlignment="Top" Width="20" FontSize="16"/>
+        <Label x:Name="label_mm" Content="mm" HorizontalAlignment="Left" Height="27" Margin="445,217,0,0" VerticalAlignment="Top" Width="43" FontSize="16" RenderTransformOrigin="0.53,0.514"/>
+        <Label x:Name="label_Nmm" Content="N/mm" HorizontalAlignment="Left" Height="27" Margin="694,222,0,0" VerticalAlignment="Top" Width="55" FontSize="16" RenderTransformOrigin="0.53,0.514"/>
+        <Button x:Name="button_OK" Content="OK" HorizontalAlignment="Left" Height="75" Margin="279,296,0,0" VerticalAlignment="Top" Width="185" FontSize="48" FontWeight="Bold" Click="Button_OK_Click"/>
+
+    </Grid>
+</Window>

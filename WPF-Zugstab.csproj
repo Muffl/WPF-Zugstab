@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>WPF_Zugstab</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Zugstab %283%29.ico" />
+    <None Remove="Zugstab2.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Zugstab (3).ico" />
+    <Resource Include="Zugstab2.png" />
+  </ItemGroup>
+
+</Project>
